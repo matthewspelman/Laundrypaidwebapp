@@ -36,7 +36,7 @@ body {
         color-stop(0.51, #E4E4E4)
     );
     background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size:12px;
     height:100%;
     margin:0px;
@@ -44,6 +44,16 @@ body {
     text-transform:uppercase;
     width:100%;
 }
+
+h1 {
+    padding: 10px;
+}
+
+#plaid-link-button {
+    border: 10px solid pink;
+    padding: 5px;
+}
+
 
 /* Portrait layout (default) */
 .app {

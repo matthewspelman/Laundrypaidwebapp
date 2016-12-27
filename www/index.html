@@ -38,16 +38,18 @@
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 
 <body>
     <div class="app">
         <img src="img/Logo asset.jpg" width="100" height="100">
+        <br></br>
         <h1>laundrypaid.com</h1>
-        <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
-        Loading state
-        </button>
-    <div id="deviceready" class="blink">
+        <br></br>
+        <!-- A hidden input named public_token will be appended to this form once the user has completed the Link flow. Link will then submit the form, sending the public_token to your server. -->
+        <form id="some-id" method="POST" action="/authenticate"></form>
+        <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Device is Ready</p>
         </div>
@@ -57,6 +59,16 @@
     <script type="text/javascript">
         app.initialize();
     </script>
+    <!-- To use Link with longtail institutions on Connect, set the
+    data-longtail attribute to 'true'. See the Parameter Reference for
+    additional documentation. -->
+    <script
+          src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"
+          data-client-name="Client Name"
+          data-form-id="some-id"
+          data-key="test_key"
+          data-product="auth"
+          data-env="tartan">
+    </script>
 </body>
-
 </html>

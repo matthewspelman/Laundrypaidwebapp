@@ -47,9 +47,3 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
-
-$('#myButton').on('click', function () {
-    var $btn = $(this).button('loading')
-    // business logic...
-    $btn.button('reset')
-});
