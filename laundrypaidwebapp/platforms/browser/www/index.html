@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <!--
     Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
 
@@ -19,7 +20,6 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html lang="en">
 <head>
     <title>laundrypaid.com web app</title>
     <meta charset="utf-8">
@@ -37,7 +37,7 @@
     * Create your own at http://cspisawesome.com
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 
@@ -46,7 +46,6 @@
         <img src="img/Logo asset.jpg" width="100" height="100">
         <br></br>
         <h1>laundrypaid.com</h1>
-        <br></br>
         <!-- A hidden input named public_token will be appended to this form once the user has completed the Link flow. Link will then submit the form, sending the public_token to your server. -->
         <form id="some-id" method="POST" action="/authenticate"></form>
         <div id="deviceready" class="blink">

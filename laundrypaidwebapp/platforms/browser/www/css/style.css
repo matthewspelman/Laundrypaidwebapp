@@ -40,20 +40,16 @@ body {
     font-size:12px;
     height:100%;
     margin:0px;
-    padding:0px;
+    padding:5px;
     text-transform:uppercase;
     width:100%;
-}
-
-h1 {
-    padding: 10px;
+    background: white;
 }
 
 #plaid-link-button {
-    border: 10px solid pink;
-    padding: 5px;
+    font-color: white;
+    padding: 10px;
 }
-
 
 /* Portrait layout (default) */
 .app {
@@ -82,10 +78,10 @@ h1 {
 h1 {
     font-size:24px;
     font-weight:normal;
-    margin:0px;
+    margin:2px;
     overflow:visible;
-    padding:0px;
     text-align:center;
+    padding:10px;
 }
 
 .event {
